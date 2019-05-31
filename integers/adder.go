@@ -2,5 +2,5 @@ package integers
 
 // Add *
 func Add(num1, num2 int) int {
-	return 4
+	return num1 + num2
 }
