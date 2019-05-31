@@ -14,3 +14,12 @@ func TestAdder(t *testing.T) {
 		t.Errorf("expected '%d' but got '%d'", expected, sum)
 	}
 }
+
+func TestAdderIsEqual5(t *testing.T) {
+	sum := integers.Add(3, 2)
+	expected := 5
+
+	if sum != expected {
+		t.Errorf("expected '%d' but got '%d'", expected, sum)
+	}
+}
