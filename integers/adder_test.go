@@ -1,12 +1,16 @@
-package integers
+package integers_test
 
-import "testing"
+import (
+	"testing"
+
+	"github.com/infernalslam/TDD_Golang/integers"
+)
 
 func TestAdder(t *testing.T) {
-    sum := Add(2, 2)
-    expected := 4
+	sum := integers.Add(2, 2)
+	expected := 4
 
-    if sum != expected {
-        t.Errorf("expected '%d' but got '%d'", expected, sum)
-    }
+	if sum != expected {
+		t.Errorf("expected '%d' but got '%d'", expected, sum)
+	}
 }
